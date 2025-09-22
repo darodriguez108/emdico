@@ -34,7 +34,7 @@
 }
 
 /* Ensure inline SVGs inherit the link color */
-#servicios-industriales .menu .menu-icon svg {
+.menu .menu-icon svg {
     width: 100%;
     height: 100%;
     display: block;
@@ -42,10 +42,9 @@
     stroke: none;
 }
 
-#servicios-industriales .google-maps-container > iframe {
+.google-maps-container > iframe {
     width: 100%;
-    aspect-ratio: 1 / 1;
-    height: auto;
+    max-width: 550px;
 }
 }
 
@@ -304,12 +303,16 @@
     }
 
     .form-container {
-        margin-bottom: 0rem;
+        margin-bottom: 0.2rem;
     }
 
      .section-grid > div {
         margin-left: 0rem;
      }
+
+    .google-maps-container > iframe {
+        aspect-ratio: 1/1;
+    }
   
 
 

@@ -463,7 +463,7 @@ body {
 
 .service-card h3 {
     /* scale based on parent container width — parent must declare `container-type: inline-size` */
-    font-size: clamp(1rem, 6.5cqw, 1.8rem);
+    font-size: clamp(1rem, 6.5cqw, 1.4rem);
     height: 4rem;
     color: var(--primary-blue-dark);
 }
@@ -537,6 +537,7 @@ details[open] {
     position: relative;
     width: max(17%, 150px);
     aspect-ratio: 1 / 1;
+    max-width: 300px;
 }
 
 .benefit-item:hover {
@@ -876,6 +877,8 @@ details[open] {
     gap: 20px;
     justify-content: center;
     padding-top: 1rem;
+    max-width: 1200px;
+    margin: 0 auto; /* center the grid container horizontally inside #contact */
 }
 
 .form-container {
@@ -885,7 +888,7 @@ details[open] {
     max-width: 100%;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.3rem;
 }
 
 .contact-form {
@@ -1105,7 +1108,7 @@ button:active,
 .social-media-list img {
     width: 50px;
     height: 50px;
-    z-index: 1000; /* Ensure the image is above the background */
+    z-index: 100; /* Ensure the image is above the background */
 }
 
 .contact-info {
@@ -1217,6 +1220,7 @@ button:active,
 */
 .google-maps-container {
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 /* Contact Section END*/
