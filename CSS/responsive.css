@@ -360,9 +360,9 @@
         padding: 0.3rem 0.5rem; /* Slightly more padding for visual comfort */
     }
 
-     .hero {
+    .hero {
         justify-content: center;
-        text-align: center;
+        text-align: left;
         padding-bottom: 5rem; /* Add space for the bottom navigation */
     }
 
@@ -371,20 +371,10 @@
     }
     
     .hero-content {
-        max-width: 90%;
-        margin: 0 auto;
-        align-items: center;
-        padding: 2rem 1rem;
+        margin: 0rem 25% 0rem 0rem;
+        padding: 0rem;
     }
     
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    
-    .hero-content p {
-        font-size: 1rem;
-    }
-
     .nosotros-section {
         padding-top: 2rem;
         background-image: linear-gradient( to bottom, var(--white) 0%, var(--white) 90%, var(--steel-gray-light) 90%, var(--steel-gray-light) 100% );
@@ -409,6 +399,11 @@
         width: 100%;
     }
 
+    .box > p {
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+
     .box-mission {
         margin-bottom: 1rem;
     }
@@ -423,7 +418,6 @@
     }
 
     .mission-content > p{
-        font-size: 14px;
         margin: 0rem;
     }
 
@@ -462,6 +456,10 @@
         gap: 0.7rem 0.7rem;
     }
 
+    .benefit-item {
+        width: 150px;
+    }
+
     .icon-container > svg {
         width: 30px;
         height: 30px;
@@ -497,17 +495,11 @@
         justify-content: flex-end; /* align children from the bottom up */
         align-items: center;       /* center horizontally */
         margin-bottom: 1rem;
-        min-height: 300px;
     }
 
     #projectos-industriales {
         scroll-margin-top: 0px; /* Adjust this value to match your header's height */
     }
-
-    #projectos-industriales > .section-header {
-        padding-bottom: 0rem;
-    }
-
 
     .project-header {
         width: 100%;
@@ -595,12 +587,7 @@
         text-align: center;
     }
 
-        p,
-    label {
-        font-size: 14px; /* 15px */
-    }
-
-    .contact-socialmedia {
+     .contact-socialmedia {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -655,9 +642,17 @@
     }
 
     .clients-grid img {
-    max-width: 140px;
+        max-width: 140px;
     }
 
     /* clients seciton END */
     
 }
+
+@media screen and (max-width: 320px) {
+
+    .menu > ul > li > a {
+        font-size: 0.6rem;
+    }
+}
+
