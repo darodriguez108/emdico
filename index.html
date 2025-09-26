@@ -64,11 +64,6 @@
                     </p>
                 </div>
             </div>
-            <div class="box" style="grid-area: box-3">
-                <figure class="nosotros-figure">
-                    <img src="images/nosotros-photo.jpg" alt="Equipo de EMDICO en obra" loading="lazy">
-                </figure>
-            </div>
         </div>
     </section>
     <!-- Services Section -->
@@ -996,30 +991,4 @@
 
 <script type="module" src="JS/carousel.js"></script>
 <script type="module" src="JS/menu-active.js"></script>
-<script>
-    // Script to send email when submit button is clicked on the form
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const name = document.getElementById('name').value.trim();
-    const empresa = document.getElementById('empresa').value.trim();
-    const telefono = document.getElementById('telefono').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    const subject = `Contacto EMDICO - ${name || 'Sin nombre'}`;
-    const body = [
-    `Nombre: ${name}`,
-    `Empresa: ${empresa}`,
-    `Teléfono: ${telefono}`,
-    `Correo: ${email}`,
-    '',
-    'Mensaje:',
-    message
-    ].join('\n');
-
-    const mailto = `mailto:info@emdico.com.mx?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    // Open user's email client with prefilled message
-    window.location.href = mailto;
-});
-</script>
+<script type="module" src="JS/form.js"></script>

@@ -377,7 +377,6 @@
     
     .nosotros-section {
         padding-top: 2rem;
-        background-image: linear-gradient( to bottom, var(--white) 0%, var(--white) 90%, var(--steel-gray-light) 90%, var(--steel-gray-light) 100% );
     }
 
     .nosotros-grid {

@@ -225,14 +225,7 @@ body {
 }
 
 .nosotros-section {
-    background-color: var(--white); /* fallback */
-    background-image: linear-gradient(
-        to bottom,
-        var(--white) 0%,
-        var(--white) 80%,
-        var(--steel-gray-light) 80%,
-        var(--steel-gray-light) 100%
-    );
+    background-color: var(--white); /* fallback */ 
 }
 
 .nosotros-grid {
@@ -336,6 +329,7 @@ body {
 #servicios-industriales {
     scroll-margin-top: 100px; /* Adjust this value to match your header's height */
     background-color: var(--steel-gray-light);
+    padding-top: 5rem;
 }
 
 .services-grid {
@@ -483,7 +477,7 @@ details {
 }
 
 details[open] {
-    max-height: 1700px; /* Open state */
+    max-height: 1900px; /* Open state */
 }
 
 /* Why Choose Us Section */
@@ -927,28 +921,6 @@ details[open] {
         transition: none;
     }
 }
-
-/* Dark mode adjustments (when applicable) */
-@media (prefers-color-scheme: dark) {
-    .certifications {
-        background: #0b1020;
-        border-color: rgba(255,255,255,0.06);
-        box-shadow: 0 8px 30px rgba(0,0,0,0.4);
-    }
-    .cert-item {
-        background: linear-gradient(180deg, rgba(20,24,35,0.95), rgba(14,18,30,0.95));
-        border-color: rgba(255,255,255,0.07);
-    }
-    .cert-item:hover,
-    .cert-item:focus-within {
-        border-color: rgba(255,255,255,0.14);
-        box-shadow: 0 10px 26px rgba(0,0,0,0.6);
-    }
-    .cert-item figcaption {
-        color: rgba(243, 244, 246, 0.92);
-    }
-}
-
 
 /* Contact Section */
 
